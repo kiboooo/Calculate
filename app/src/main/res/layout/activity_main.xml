@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0b0b0b"
+
+
+    >
+<!--focusableInTouchMode : 点击后获取不到焦点，也就无法输入-->
+    <!--android:focusable="true" -->
+    <!--android:focusableInTouchMode="false"-->
+
+    <EditText
+        android:id="@+id/enter_message"
+        tools:ignore="LabelFor"
+        app:layout_heightPercent="30%"
+        app:layout_widthPercent="100%"
+        android:gravity="center_vertical|end"
+        android:background="@null"
+        android:textSize="50sp"
+        android:textColor="#FFD700"
+        android:maxLines="5"
+        android:maxLength="1000"
+        android:inputType="none"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        />
+
+    <Button
+        android:id="@+id/button1"
+        android:textSize="30sp"
+        app:layout_heightPercent="14%"
+        app:layout_widthPercent="50%"
+        android:textColor="#b5b1b1"
+        android:background="@drawable/ripple_button"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:text="0"
+        />
+
+    <Button
+        android:id="@+id/button2"
+        android:textSize="40sp"
+        app:layout_heightPercent="14%"
+        app:layout_widthPercent="25%"
+        android:background="@drawable/ripple_equal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:text="="
+        />
+
+    <Button
+        android:id="@+id/button3"
+        android:textSize="40sp"
+        android:textColor="#b5b1b1"
+        android:background="@drawable/ripple_button"
+        app:layout_heightPercent="14%"
+        app:layout_widthPercent="25%"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@id/button1"
+        android:text="."
+         />
+
+    <Button
+        android:id="@+id/button4"
+        android:textSize="30sp"
+        app:layout_heightPercent="14%"
+        app:layout_widthPercent="25%"
+        android:textColor="#b09c90"
+        android:background="@drawable/ripple_operate"
+        android:layout_above="@id/button2"
+        android:layout_alignParentEnd="true"
+        android:text="+"
+        />
+
+
+
+    <Button
+        android:id="@+id/button5"
+        app:layout_heightPercent="14%"
+        app:layout_widthPercent="25%"
+        android:textColor="#b5b1b1"
+        android:background="@drawable/ripple_button"
+        android:layout_above="@id/button1"
+        android:textSize="30sp"
+        android:text="1"
+        />
+
+    <Button
+        android:id="@+id/button6"
+        app:layout_heightPercent="14%"
+        app:layout_widthPercent="25%"
+        android:textSize="30sp"
+        android:textColor="#b5b1b1"
+        android:background="@drawable/ripple_button"
+        android:layout_alignBottom="@+id/button5"
+        android:layout_toEndOf="@+id/button5"
+        android:layout_below="@+id/button8"
+        android:text="2"
+        />
+
+    <Button
+        android:id="@+id/button7"
+        app:layout_heightPercent="14%"
+        app:layout_widthPercent="25%"
+        android:textColor="#b5b1b1"
+        android:background="@drawable/ripple_button"
+        android:layout_above="@id/button1"
+        android:layout_toEndOf="@id/button6"
+        android:textSize="30sp"
+        android:text="3"
+        />
+
+    <Button
+        android:id="@+id/button8"
+        app:layout_heightPercent="14%"
+        app:layout_widthPercent="25%"
+        android:textColor="#b5b1b1"
+        android:background="@drawable/ripple_button"
+        android:textSize="30sp"
+        android:layout_above="@+id/button5"
+        android:layout_alignParentStart="true"
+        android:text="4"
+        />
+
+    <Button
+        android:id="@+id/button9"
+        app:layout_heightPercent="14%"
+        app:layout_widthPercent="25%"
+        android:textColor="#b5b1b1"
+        android:background="@drawable/ripple_button"
+        android:textSize="30sp"
+        android:layout_alignBottom="@+id/button11"
+        android:layout_toEndOf="@+id/button5"
+        android:layout_below="@+id/button12"
+        android:text="5"
+        />
+
+    <Button
+        android:id="@+id/button10"
+        app:layout_heightPercent="14%"
+        app:layout_widthPercent="25%"
+        android:textColor="#b5b1b1"
+        android:background="@drawable/ripple_button"
+        android:layout_above="@id/button4"
+        android:layout_toEndOf="@id/button9"
+        android:textSize="30sp"
+        android:text="6"
+        />
+
+    <Button
+        android:id="@+id/button11"
+
+        app:layout_heightPercent="14%"
+        app:layout_widthPercent="25%"
+        android:textColor="#b09c90"
+        android:background="@drawable/ripple_operate"
+        android:textSize="40sp"
+        android:layout_below="@+id/button15"
+        android:layout_alignParentEnd="true"
+        android:text="-"
+        />
+
+    <Button
+        android:id="@+id/button12"
+        app:layout_heightPercent="14%"
+        app:layout_widthPercent="25%"
+        android:textColor="#b5b1b1"
+        android:background="@drawable/ripple_button"
+        android:textSize="30sp"
+        android:text="7"
+        android:layout_below="@+id/button16"
+        android:layout_alignParentStart="true" />
+
+
+
+    <Button
+        android:id="@+id/button13"
+        app:layout_heightPercent="14%"
+        app:layout_widthPercent="25%"
+        android:textColor="#b5b1b1"
+        android:background="@drawable/ripple_button"
+        android:textSize="30sp"
+        android:layout_alignBottom="@+id/button12"
+        android:layout_toEndOf="@+id/button8"
+        android:layout_below="@+id/button16"
+        android:text="8"
+        />
+
+    <Button
+        android:id="@+id/button14"
+        app:layout_heightPercent="14%"
+        app:layout_widthPercent="25%"
+        android:textColor="#b5b1b1"
+        android:background="@drawable/ripple_button"
+        android:layout_above="@id/button8"
+        android:layout_toEndOf="@id/button13"
+        android:textSize="30sp"
+        android:text="9"
+        />
+
+    <Button
+        android:id="@+id/button15"
+        app:layout_heightPercent="14%"
+        app:layout_widthPercent="25%"
+        android:textColor="#b09c90"
+        android:background="@drawable/ripple_operate"
+        android:layout_above="@id/button8"
+        android:layout_toEndOf="@id/button14"
+        android:textSize="30sp"
+        android:text="×"
+        />
+
+    <Button
+        android:id="@+id/button16"
+        app:layout_heightPercent="14%"
+        app:layout_widthPercent="25%"
+        android:background="@drawable/ripple_button"
+        android:textSize="30sp"
+        android:textColor="#ed3b3b"
+        android:layout_below="@+id/enter_message"
+        android:layout_alignParentStart="true"
+        android:text="C"
+        />
+
+    <Button
+        android:id="@+id/button17"
+        app:layout_heightPercent="14%"
+        app:layout_widthPercent="25%"
+        android:textColor="#b09c90"
+        android:background="@drawable/ripple_operate"
+        android:textSize="30sp"
+        android:text="("
+        android:layout_above="@+id/button14"
+        android:layout_toEndOf="@+id/button12" />
+
+    <Button
+        android:id="@+id/button18"
+        app:layout_heightPercent="14%"
+        app:layout_widthPercent="25%"
+        android:textColor="#b09c90"
+        android:background="@drawable/ripple_operate"
+        android:textSize="30sp"
+        android:layout_alignBottom="@+id/button17"
+        android:layout_toEndOf="@+id/button17"
+        android:layout_below="@+id/enter_message"
+        android:text=")"
+        />
+
+    <Button
+        android:id="@+id/button19"
+        app:layout_heightPercent="14%"
+        app:layout_widthPercent="25%"
+        android:textColor="#b09c90"
+        android:background="@drawable/ripple_operate"
+        android:layout_above="@id/button12"
+        android:layout_toEndOf="@id/button18"
+        android:textSize="30sp"
+        android:text="÷"
+        />
+
+</android.support.percent.PercentRelativeLayout>
